@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mini Homepage - Diary</title>
+        <link rel="stylesheet" href="./static/css/font.css" />
+        <link rel="stylesheet" href="./static/css/layout.css" />
+        <link rel="stylesheet" href="./static/css/diary.css" />
+        <script src="" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="bookcover">
+            <div class="bookdot">
+                <div class="page">
+                    <div class="container">
+                        <div class="visit_column">
+                            <div class="row1-1">
+                                TODAY <span class="visit_num">28</span> | TOTAL 234918
+                            </div>
+                            <div class="row1-2 box">
+                                <img class="profile" src="./static/img/FennecFox.jpg">
+                                <div class="introduction">
+                                    나는야 쿠키를 좋아하는 <br>
+                                    사막여우
+                                </div>
+                                <div class="name">C00K12S</div>
+                                <select name="surfing" class="surfing" onchange="window.open(value, '_blank');">
+                                    <option value="/" selected disabled hidden>파도타기</option>
+                                    <option value="https://cafe.naver.com/codeuniv">
+                                        코뮤니티로 가기
+                                    </option>
+                                    <option value="https://www.instagram.com/">
+                                        인스타그램으로 가기
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="content_column">
+                            <div class="row2-1">
+                                <div class="title_item">추억 상자</div>
+                                <div class="url_item">https://url주소/나중에입력</div>
+                            </div>
+
+                            <div class="row2-2 box">
+                                <div class="diary_box">
+                                    <div class="calendar">
+                                        <div class="today">03. 22<br>TUE</div>
+                                        <div class="day">
+                                            1 2 3 <span>4 </span><span>5 </span>6 7 8 9 10 <span>11 </span><span>12 </span>
+                                            13 14 15 16 17 <span>18 </span><span>19 </span>20 
+                                            21 22 23 24 <span>25 </span><span>26 </span>27 28 29 30 31
+                                        </div>
+                                    </div>
+
+                                    <div class="diary_post_box">
+                                        <div class="diary_post">
+                                            <div class="diary_header">2022.03.18 금 16:30</div>
+                                            <div class="diary_content">
+                                                <div class="diary_text">
+                                                    오늘은 열심히 싸이월드를 만들었다. <br>
+                                                    뭐 이렇게 할 게 많은가 생각하면서 만들었더니, <br>
+                                                    어느새 끝나따. <br>
+                                                    끝일 것 같지만, 끝일까? <br><br>
+
+                                                    정말 모르겠따. 내일도 열심히 살아야겠다고 생각하고 있따. <br><br>
+
+                                                    파이팅! <br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="diary_post">
+                                            <div class="diary_header">2022.03.20 일 02:19</div>
+                                            <div class="diary_content">
+                                                <div class="diary_text">
+                                                    울지 않ㄱㅣ <br>
+                                                    아프지 않ㄱㅣ <br>
+                                                    씩씩하ㄱㅣ <br>
+                                                    억ㅈㅣ로ㄹr도 웃ㄱㅣ <br>
+                                                    ㅌㅣㄴㅐㅈㅣ 말ㄱㅣ <br>
+                                                    . <br>
+                                                    . <br>
+                                                    . <br>
+                                                    오늘은 괜찮은 듯 <br>
+                                                    그렇ㄱㅔ ㅈㅣㄴㅐㄱㅣ <br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="diary_post">
+                                            <div class="diary_header">2022.03.21 월 03:23</div>
+                                            <div class="diary_content">
+                                                <div class="diary_text">
+                                                    난 가끔 <br>
+                                                    눈물을 흘린다. <br>
+                                                    가끔은 눈물을 참을 수 없는 내가 별루다. <br>
+                                                    맘이 아파서... <br>
+                                                    소리치며... 울 수 있다는 건... <br>
+                                                    좋은 거야... <br>
+                                                    머... 꼭 슬퍼야만 우는 건 아니잖아... ^^ <br>
+                                                    난... 눈물이... 좋다... <br>
+                                                    아니... <br>
+                                                    머리가 아닌 <br>
+                                                    맘으로... 우는 내가 좋다... <br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button class="secret_diary_btn" id="secret_diary_btn" onclick="getTextFile()"><i class="fas fa-lock icon"></i>&nbsp;&nbsp;비밀일기 보기</button>
+                                        <div class="diary_post" id="secret_diary_post">
+                                            <div class="diary_header">C00K12S의 비밀일기</div>
+                                            <div class="diary_content">
+                                                <div class="diary_text" id="secret_diary_text"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu_column">
+                            <div class="home"><a href="./home.html">홈</a></div>
+                            <div class="diary"><a href="./diary.html">다이어리</a></div>
+                            <div class="album"><a href="./album.html">사진첩</a></div>
+                            <div class="visitor"><a href="./visitor.html">방명록</a></div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        
+        <script>
+            function getTextFile() {
+                var input = document.createElement("input");
+
+                input.type = "file";
+                input.accept = "text/plain";
+
+                input.onchange = function (event) {
+                    processFile(event.target.files[0]);
+                };
+
+                input.click();
+            }
+
+            function processFile(file) {
+                var reader = new FileReader();
+                reader.readAsText(file, "utf-8");
+
+                reader.onload = function () {
+                    document.getElementById("secret_diary_text").innerText = reader.result;
+                    document.getElementById("secret_diary_btn").style.display = "none"; // '비밀일기 보기' 버튼을 숨긴다.
+                    document.getElementById("secret_diary_post").style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

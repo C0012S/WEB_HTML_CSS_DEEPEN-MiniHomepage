@@ -1,0 +1,69 @@
+.visitor_box {
+    margin: 0px 0px 0px 8px;
+    width: 476px;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.visitor_post {
+    margin: 0px 0px 60px 0px;
+}
+
+.visitor_header {
+    color: black;
+    background-color: lightgray;
+    margin: 0px 0px 10px 0px;
+    padding: 7px 0px 10px 7px;
+    font-size: 18px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.visitor_name {
+    color: blue;
+}
+
+.visitor_content {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.visitor_image {
+    flex: 0 0 8rem;
+    height: 8rem;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-1 {
+    background-image: url("../img/background1.jpg");
+    width: 160px;
+    height: 160px;
+}
+
+.background-2 {
+    background-image: url("../img/background2.jpg");
+    width: 160px;
+    height: 160px;
+}
+
+.background-3 {
+    background-image: url("../img/background3.jpg");
+    width: 160px;
+    height: 160px;
+}
+
+.visitor_image > img {
+    width: 140px;
+    height: 140px;
+}
+
+.visitor_text {
+    font-size: 20px;
+    font-family: 'Dongle', sans-serif;
+    margin-left: 10px;
+}

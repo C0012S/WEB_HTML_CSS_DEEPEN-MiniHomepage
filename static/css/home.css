@@ -1,0 +1,76 @@
+.head {
+    color: rgb(70, 115, 150);
+    font-size: 16px;
+    margin: 3px;
+    font-weight: 1000;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+hr {
+    margin: 3px;
+}
+
+.updated_news {
+    flex: 0.3;
+}
+
+.item_box {
+    display: flex;
+}
+
+.item1 {
+    flex: 0.5;
+    line-height: 20px;
+    margin: 2px;
+}
+
+.item2 {
+    flex: 0.5;
+    line-height: 20px;
+    margin: 2px;
+}
+
+.picture span {
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 10px 3px;
+    font-weight: bold;
+    text-align: center;
+    background-color: cornflowerblue;
+}
+
+.board span {
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 10px 3px;
+    font-weight: bold;
+    text-align: center;
+    background-color: coral;
+}
+
+.list {
+    border-bottom: 1px dashed lightgray;
+}
+
+.list span {
+    color: blue;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.miniroom {
+    flex: 0.7;
+}
+
+.miniroom_img {
+    flex: 0.7;
+    margin: 3px;
+}
+
+.miniroom_img > img {
+    border: 1px solid black;
+    width: 476px;
+    height: 348px;
+}

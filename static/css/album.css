@@ -1,0 +1,29 @@
+.album_box {
+    margin: 0px 0px 0px 8px;
+    width: 476px;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.album_post {
+    margin: 0px 0px 60px 0px;
+}
+
+.album_header {
+    color: black;
+    background-color: lightgray;
+    margin: 0px 0px 10px 0px;
+    padding: 7px 0px 10px 7px;
+    font-size: 18px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.album_content {
+    margin: 10px;
+}
+
+.album_text {
+    font-size: 20px;
+    font-family: 'Dongle', sans-serif;
+}

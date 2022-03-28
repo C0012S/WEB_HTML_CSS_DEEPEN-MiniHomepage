@@ -1,0 +1,103 @@
+.diary_box {
+    margin: 0px 0px 0px 8px;
+    width: 476px;
+    height: 500px;
+}
+
+.calendar {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 464px;
+    display: flex;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.today {
+    flex: 0.15;
+    text-align: center;
+    padding: 1px 5px;
+    color: cornflowerblue;
+    font-size: 16px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.day {
+    flex: 0.9;
+    padding: 0px 2px 2px 2px;
+    color: gray;
+    font-size: 17px;
+}
+
+.day span:nth-child(1),
+span:nth-child(3),
+span:nth-child(5),
+span:nth-child(7) {
+    color: blue;
+}
+
+.day span:nth-child(2),
+span:nth-child(4),
+span:nth-child(6),
+span:nth-child(8) {
+    color: red;
+}
+
+.diary_post_box {
+    width: 476px;
+    height: 430px;
+    margin: 16px 0px 0px 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.diary_post {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 0px 0px 60px 0px;
+}
+
+.diary_header {
+    color: cornflowerblue;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+    padding: 7px 0px 10px 7px;
+    font-size: 18px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.diary_content {
+    margin: 10px;
+}
+
+.diary_text {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Dongle', sans-serif;
+}
+
+.secret_diary_btn {
+    color: white;
+    background-color: white;
+    border: 0px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    transition: 0.4s;
+}
+
+.secret_diary_btn:hover
+{
+    border: 1px solid lightseagreen;
+    border-radius: 10px;
+    background-color: lightseagreen;
+}
+
+#secret_diary_post {
+    display: none;
+}

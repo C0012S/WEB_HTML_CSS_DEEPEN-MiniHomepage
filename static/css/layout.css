@@ -1,0 +1,200 @@
+body {
+    background-color: #a3a3a3;
+    background-image: url("../img/pattern.png");
+    background-size: 100px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+}
+
+.bookcover {
+    background-color: #b4d1da;
+    border-radius: 9px;
+    border: 1px solid #738186;
+
+    width: 960px;
+    height: 660px;
+
+    margin: 100px auto;
+
+    position: relative;
+}
+
+.bookdot {
+    border-radius: 9px;
+    border: 1px dashed white;
+    width: 930px;
+    height: 630px;
+    top: 15px;
+    left: 15px;
+    position: absolute;
+}
+
+.page {
+    background-color: rgb(235, 235, 235);
+    border-radius: 9px;
+    border: 1px solid rgb(235, 235, 235);
+    width: 910px;
+    height: 610px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+.container {
+    position: absolute;
+    width: 870px;
+    height: 570px;
+    margin: 20px 20px 20px;
+    display: flex;
+}
+
+.visit_column {
+    display: flex;
+    flex: 0.3;
+    flex-direction: column;
+}
+
+.row1-1 {
+    flex: 0.05;
+    text-align: center;
+}
+
+.visit_num {
+    color: red;
+}
+
+.row1-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.content_column {
+    display: flex;
+    flex-direction: column;
+    flex: 0.8;
+    margin-left: 20px;
+}
+
+.row2-1 {
+    display: flex;
+    flex: 0.05;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.row2-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 14px 12px;
+}
+
+.title_item {
+    flex: 0.5;
+    text-align: left;
+    padding-left: 4px;
+}
+
+.url_item {
+    flex: 0.5;
+    text-align: right;
+    padding-right: 60px;
+}
+
+.menu_column {
+    flex: 0.1;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.profile {
+    flex: 0.45;
+    width: 210px;
+    height: 230px;
+    padding: 30px;
+}
+
+.introduction {
+    flex: 0.5;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Dongle', sans-serif;
+}
+
+.name {
+    flex: 0.05;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 10px;
+}
+
+.surfing {
+    flex: 0.05;
+    padding: 10px;
+    margin: 0px 20px 20px 20px;
+}
+
+.home {
+    margin: 40px 0px 0px;
+    background-color: cornflowerblue;
+    padding: 4px;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.diary {
+    margin: 30px 0px;
+    background-color: cornflowerblue;
+    padding: 4px;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.album {
+    margin: 30px 0px;
+    background-color: cornflowerblue;
+    padding: 4px;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.visitor {
+    margin: 30px 0px;
+    background-color: cornflowerblue;
+    padding: 4px;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.home:hover {
+    background-color: blueviolet;
+}
+
+.diary:hover {
+    background-color: blueviolet;
+}
+
+.album:hover {
+    background-color: blueviolet;
+}
+
+.visitor:hover {
+    background-color: blueviolet;
+}
